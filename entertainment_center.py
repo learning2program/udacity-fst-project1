@@ -2,6 +2,7 @@
 import fresh_tomatoes
 import media
 
+# Different movies and data related to the movies
 shawshank_redemption = media.Movie("Shawshank Redemption",
                         "Andy Dufresne (Tim Robbins) is sentenced to two consecutive life terms in prison for the "
                         "murders of his wife and her lover and is sentenced to a tough prison. However, "
@@ -22,5 +23,9 @@ everything_is_illuminated = media.Movie("Everything is Illuminated",
                                         "http://upload.wikimedia.org/wikipedia/en/2/27/Everything_Is_Illuminated_film.jpg",
                                         "https://www.youtube.com/watch?v=tSUOYY4oukc")
 
-movies = [ shawshank_redemption, Unbroken, everything_is_illuminated  ]
+# Create a list of movies
+movies = [shawshank_redemption, Unbroken, everything_is_illuminated]
+
+# The 'movies' list defined above is passed to the open_movies_page from module fresh_tomatoes.py
+# If all goes well, this should open a browser page displaying generated based on the list 'movies'
 fresh_tomatoes.open_movies_page(movies)
